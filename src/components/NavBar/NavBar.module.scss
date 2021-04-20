@@ -1,0 +1,14 @@
+@import '../../variables';
+
+.navBar {
+  margin: 30px 0;
+  display: flex;
+  justify-content: space-evenly;
+  font-family: $body-font;
+
+  a {
+    color: #959595;
+    font-size: 16px;
+    text-decoration: none;
+  }
+}

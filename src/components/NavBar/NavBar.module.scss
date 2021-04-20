@@ -1,14 +1,27 @@
 @import '../../variables';
 
 .navBar {
-  margin: 30px 0;
+  margin: 30px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   font-family: $body-font;
+  color: #757575;
 
-  a {
-    color: #959595;
-    font-size: 16px;
-    text-decoration: none;
+  .homeIcon,
+  .menuIcon {
+    font-size: 24px;
+  }
+
+  .menuOpen {
+    color: #F65C78;
+  }
+
+  .menu {
+    a {
+      color: #757575;
+      font-size: 16px;
+      text-decoration: none;
+      margin: 0 12px;
+    }
   }
 }

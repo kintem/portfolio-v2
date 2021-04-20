@@ -11,8 +11,12 @@ const Home = () => {
         <h1>Hi I'm <span className={styles.name}>Kinte</span></h1>
         <h2>Web Developer</h2>
         <div>
-          <FontAwesomeIcon icon={["fab", "github-square"]} className= {styles.githubIcon} />
-          <FontAwesomeIcon icon={["fab", "linkedin"]} className={styles.  linkedinIcon} />
+          <a href="https://github.com/kintem" target="_blank">
+            <FontAwesomeIcon icon={["fab", "github-square"]} className= {styles.githubIcon} />
+          </a>
+          <a href="https://www.linkedin.com/in/kinte-matulyte/" target="_blank">
+            <FontAwesomeIcon icon={["fab", "linkedin"]} className={styles.linkedinIcon} />
+          </a>
         </div>
       </section>
     </>

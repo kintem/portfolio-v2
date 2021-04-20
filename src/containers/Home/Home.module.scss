@@ -1,0 +1,43 @@
+@import '../../variables';
+
+.homeContainer {
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h1 {
+    font-family: $heading-font;
+    font-size: 88px;
+    font-weight: 400;
+    margin: 20px 0 10px;
+  
+    .name {
+      text-transform: capitalize;
+      font-size: 96px;
+    }
+  }
+  
+  h2 {
+    font-family: $heading-font;
+    font-weight: 400;
+    font-size: 26px;
+    color: #FFB71B;
+    margin: 20px;
+  }
+  
+  .linkedinIcon, 
+  .githubIcon {
+    margin: 15px;
+    font-size: 50px;
+  }
+  
+  .githubIcon {
+    color: #F65C78;
+  }
+  
+  .linkedinIcon {
+    color: #C3F584;
+  }
+  
+}

@@ -5,7 +5,6 @@ import styles from './Projects.module.scss';
 const Projects = () => {
   return (
     <>
-      <NavBar />
       <div className={styles.projects}></div>
     </>
   )

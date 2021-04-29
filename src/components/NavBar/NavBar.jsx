@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-// import { CSSTransition } from 'react-transition-group';
+import { CSSTransitionGroup } from 'react-transition-group';
 import { Link } from "@reach/router";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styles from './NavBar.module.scss';
@@ -13,11 +13,12 @@ const NavBar = () => {
   return (
     <div className={styles.navBar}>
       <FontAwesomeIcon icon="home" className={styles.homeIcon}/>
-      {/* <CSSTransition in={isOpen} timeout={200} classNames="fade-appear"> */}
-        {/* <div> */}
-        {menu}
-        {/* </div> */}
-      {/* </CSSTransition> */}
+      <CSSTransitionGroup
+          transitionName="example"
+          transitionEnterTimeout={500}
+          transitionLeaveTimeout={300}>
+          {menu}
+      </CSSTransitionGroup>
       <span onClick={() => setIsOpen(!isOpen)}>
         <FontAwesomeIcon icon={menuIcon} className={`${styles.menuIcon} ${openStyles}`} />
       </span>

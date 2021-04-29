@@ -1,0 +1,43 @@
+@import '../../variables';
+
+.navBar {
+  margin: 30px;
+  display: flex;
+  justify-content: space-between;
+  font-family: $body-font;
+  color: #757575;
+
+  .homeIcon,
+  .menuIcon {
+    font-size: 24px;
+    color: #757575;
+  }
+
+  .active {
+    color: #F65C78;
+  }
+
+  .menu {
+    a {
+      color: #757575;
+      font-size: 16px;
+      text-decoration: none;
+      margin: 0 12px;
+    }
+  }
+
+  // .navToggle-enter {
+  //   opacity: 0;
+  // }
+  // .navToggle-enter-active {
+  //   opacity: 1;
+  //   transition: opacity 200ms;
+  // }
+  // .navToggle-exit {
+  //   opacity: 1;
+  // }
+  // .navToggle-exit-active {
+  //   opacity: 0;
+  //   transition: opacity 200ms;
+  // }
+}

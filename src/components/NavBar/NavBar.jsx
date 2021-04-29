@@ -36,7 +36,7 @@ const NavBar = (props) => {
   ) : "";
 
   return (
-    <div className={styles.navBar}>
+    <section className={styles.navBar}>
       <Link to="/" key="0">
         <FontAwesomeIcon 
           icon="home" 
@@ -54,7 +54,7 @@ const NavBar = (props) => {
           icon={menuIcon} 
           className={isOpen ? `${styles.active} ${styles.menuIcon}` : `${styles.menuIcon}`} />
       </span>
-    </div>
+    </section>
   );
 };
 

@@ -3,7 +3,6 @@ import { Router } from '@reach/router';
 import Home from '../Home';
 import About from '../About';
 import Projects from '../Projects';
-import { Router } from '@reach/router';
 
 const Routes = (props) => {
   const { setActivePage } = props;
@@ -11,8 +10,8 @@ const Routes = (props) => {
   return (
     <Router>
       <Home path='/' setActivePage={setActivePage} />
-      <About path="about" />
-      <Projects path="projects" />
+      <About path='about' setActivePage={setActivePage} />
+      <Projects path='projects' setActivePage={setActivePage} />
     </Router>
   )
 };

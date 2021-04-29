@@ -1,12 +1,20 @@
-import React from 'react';
-import NavBar from '../../components/NavBar';
+import React, { useEffect } from 'react';
+import ProjectCard from '../../components/ProjectCard';
+import projects from '../../data/projects';
 import styles from './Projects.module.scss';
 
-const Projects = () => {
+const Projects = (props) => {
+  const {setActivePage} = props;
+
+  useEffect(() => {
+    setActivePage('projects')
+  }, [])
+
   return (
-    <>
-      <div className={styles.projects}></div>
-    </>
+    <section className={styles.projects}>
+      <h2>Projects</h2>
+      {projects.map(project => <ProjectCard project={project}/>)}
+    </section>
   )
 }
 

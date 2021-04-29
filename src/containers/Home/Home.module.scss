@@ -8,12 +8,12 @@
 
   h1 {
     font-family: $heading-font;
-    font-size: 88px;
+    font-size: 64px;
     font-weight: 400;
     margin: 20px 0 10px;
   
     .name {
-      text-transform: capitalize;
+      // text-transform: capitalize;
       font-size: 96px;
     }
   }

@@ -1,15 +1,19 @@
-import React from 'react';
-import NavBar from '../../components/NavBar';
+import React, { useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styles from './Home.module.scss';
 
-const Home = () => {
+const Home = (props) => {
+  const {setActivePage} = props;
+
+  useEffect(()=> {
+    setActivePage("home")
+  }, [])
+
   return (
     <>
-      <NavBar />
       <section className={styles.homeContainer}>
-        <h1>Hi I'm <span className={styles.name}>Kinte</span></h1>
-        <h2>Web Developer</h2>
+        <h1>Hi, I'm <span className={styles.name}>Kinte.</span></h1>
+        <h2>A Web Developer.</h2>
         <div>
           <a href="https://github.com/kintem" target="_blank">
             <FontAwesomeIcon icon={["fab", "github-square"]} className= {styles.githubIcon} />

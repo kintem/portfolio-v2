@@ -2,9 +2,9 @@
 @import '../../variables';
 
 .projects {
-  height: 100%;
   width: 100vw;
   background-color: #FFB71B;
+  padding-bottom: 30px;
 
   h2 {
     @extend %heading;

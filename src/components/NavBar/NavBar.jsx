@@ -38,20 +38,20 @@ const NavBar = (props) => {
   return (
     <section className={styles.navBar}>
       <Link to="/" key="0">
-       <Icon 
+       <InlineIcon 
           icon={"fa-solid:home"}
           className={activePage === 'home' ? `${styles.active} ${styles.homeIcon}` : `${styles.homeIcon}`} 
         />
       </Link>
-      <CSSTransitionGroup
+      {/* <CSSTransitionGroup
           transitionName="example"
           transitionEnterTimeout={500}
-          transitionLeaveTimeout={300}>
+          transitionLeaveTimeout={300}> */}
           {menu}
-      </CSSTransitionGroup>
+      {/* </CSSTransitionGroup> */}
       <span onClick={() => setIsOpen(!isOpen)}>
-        <Icon 
-          icon={menuIcon} 
+        <InlineIcon 
+          icon={isOpen? "heroicons-solid:x" : "gg-menu"} 
           className={isOpen ? `${styles.active} ${styles.menuIcon}` : `${styles.menuIcon}`} 
         />
       </span>

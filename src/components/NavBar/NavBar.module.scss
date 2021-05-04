@@ -1,11 +1,16 @@
 @import '../../variables';
 
 .navBar {
-  margin: 30px;
+  width: 100vw;
+  position: fixed;
+  padding: 22px 30px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   font-family: $body-font;
   color: #757575;
+  background-color: white;
+  border-radius: 0 0 25px 25px;
 
   .homeIcon,
   .menuIcon {
@@ -13,31 +18,41 @@
     color: #757575;
   }
 
-  .active {
-    color: #F65C78;
-  }
-
   .menu {
     a {
       color: #757575;
       font-size: 16px;
       text-decoration: none;
-      margin: 0 12px;
+      padding: 3px 6px;
+      margin: 0 8px;
+      border-radius: 6px;
+    }
+
+    .active {
+      background-color: #F65C78;
+      color: white;
     }
   }
 
-  // .navToggle-enter {
-  //   opacity: 0;
-  // }
-  // .navToggle-enter-active {
-  //   opacity: 1;
-  //   transition: opacity 200ms;
-  // }
-  // .navToggle-exit {
-  //   opacity: 1;
-  // }
-  // .navToggle-exit-active {
-  //   opacity: 0;
-  //   transition: opacity 200ms;
-  // }
+  .active {
+    color: #F65C78;
+  }
+
+  .example-enter {
+    opacity: 0.01;
+  }
+  
+  .example-enter.example-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+  }
+  
+  .example-leave {
+    opacity: 1;
+  }
+  
+  .example-leave.example-leave-active {
+    opacity: 0.01;
+    transition: opacity 300ms ease-in;
+  }
 }

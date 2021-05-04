@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-// import { CSSTransition } from 'react-transition-group';
+import { CSSTransitionGroup } from 'react-transition-group';
 import { Link } from "@reach/router";
 import { Icon, InlineIcon } from '@iconify/react-with-api';
 import styles from './NavBar.module.scss';
@@ -36,24 +36,26 @@ const NavBar = (props) => {
   ) : "";
 
   return (
-    <div className={styles.navBar}>
+    <section className={styles.navBar}>
       <Link to="/" key="0">
-        <Icon 
+       <Icon 
           icon={"fa-solid:home"}
           className={activePage === 'home' ? `${styles.active} ${styles.homeIcon}` : `${styles.homeIcon}`} 
         />
       </Link>
-      {/* <CSSTransition in={isOpen} timeout={200} classNames="fade-appear"> */}
-        {/* <div> */}
-        {menu}
-        {/* </div> */}
-      {/* </CSSTransition> */}
+      <CSSTransitionGroup
+          transitionName="example"
+          transitionEnterTimeout={500}
+          transitionLeaveTimeout={300}>
+          {menu}
+      </CSSTransitionGroup>
       <span onClick={() => setIsOpen(!isOpen)}>
         <Icon 
           icon={menuIcon} 
-          className={isOpen ? `${styles.active} ${styles.menuIcon}` : `${styles.menuIcon}`} />
+          className={isOpen ? `${styles.active} ${styles.menuIcon}` : `${styles.menuIcon}`} 
+        />
       </span>
-    </div>
+    </section>
   );
 };
 

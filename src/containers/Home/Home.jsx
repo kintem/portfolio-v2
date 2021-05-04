@@ -10,7 +10,6 @@ const Home = (props) => {
   }, [])
 
   return (
-    <>
       <section className={styles.homeContainer}>
         <h1>Hi, I'm <span className={styles.name}>Kinte.</span></h1>
         <h2>A Web Developer.</h2>
@@ -23,7 +22,6 @@ const Home = (props) => {
           </a>
         </div>
       </section>
-    </>
   )
 }
 

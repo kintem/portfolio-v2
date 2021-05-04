@@ -1,0 +1,14 @@
+@import '../../placeholders';
+@import '../../variables';
+
+.projects {
+  height: 100%;
+  width: 100vw;
+  background-color: #FFB71B;
+
+  h2 {
+    @extend %heading;
+    padding-top: 125px;
+    font-size: 34px;
+  }
+}

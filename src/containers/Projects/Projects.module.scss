@@ -2,13 +2,13 @@
 @import '../../variables';
 
 .projects {
-  height: 100vh;
-  width: 100vW;
+  // height: 100vh;
+  width: 100vw;
   background-color: #FFB71B;
 
   h2 {
     @extend %heading;
-    padding: 125px;
+    padding-top: 125px;
     font-size: 34px;
   }
 }

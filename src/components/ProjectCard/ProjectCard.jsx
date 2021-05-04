@@ -8,8 +8,8 @@ const ProjectCard = (props) => {
   const iconsJSX = project.icons.map(icon => <FontAwesomeIcon icon={icon} />)
 
   return (
-    <article>
-      {/* <img src={} alt=""/> */}
+    <article className={styles.projectCard}>
+      <img src={project.img} alt=""/>
       <h4>{project.name}</h4>
     </article>
   )

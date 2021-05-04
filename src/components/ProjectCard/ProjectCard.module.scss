@@ -1,4 +1,16 @@
-img {
-  width: 200px;
-  height: 190px;
+.projectCard {
+  background-color: white;
+  border-radius: 20px;
+  margin: 20px auto;
+  background-color: #FFD271;
+  padding: 20px;
+  border: 1px solid white;
+  width: 80%;
+
+  img {
+    width: 250px;
+    height: 200px;
+    border-radius: 20px;
+    border: 1px solid white;
+  }
 }

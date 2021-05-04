@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import { CSSTransitionGroup } from 'react-transition-group';
 import { Link } from "@reach/router";
-import { Icon } from '@iconify/react-with-api';
+import { Icon, InlineIcon } from '@iconify/react-with-api';
 import styles from './NavBar.module.scss';
 
 const NavBar = (props) => {
@@ -38,10 +38,10 @@ const NavBar = (props) => {
   return (
     <section className={styles.navBar}>
       <Link to="/" key="0">
-        {/* <FontAwesomeIcon 
-          icon="home" 
+       <Icon 
+          icon={"fa-solid:home"}
           className={activePage === 'home' ? `${styles.active} ${styles.homeIcon}` : `${styles.homeIcon}`} 
-        /> */}
+        />
       </Link>
       <CSSTransitionGroup
           transitionName="example"
@@ -50,9 +50,10 @@ const NavBar = (props) => {
           {menu}
       </CSSTransitionGroup>
       <span onClick={() => setIsOpen(!isOpen)}>
-        {/* <FontAwesomeIcon 
+        <Icon 
           icon={menuIcon} 
-          className={isOpen ? `${styles.active} ${styles.menuIcon}` : `${styles.menuIcon}`} /> */}
+          className={isOpen ? `${styles.active} ${styles.menuIcon}` : `${styles.menuIcon}`} 
+        />
       </span>
     </section>
   );

@@ -12,22 +12,22 @@ const NavBar = (props) => {
   const menu = isOpen ? (
     <nav className={styles.menu}>
       <Link 
-        to="projects" 
-        key="1" 
+        to='projects' 
+        key='1' 
         className={activePage === 'projects' ? styles.active : ''}
       >
         Projects
       </Link>
       <Link 
-        to="about" 
-        key="2" 
+        to='about' 
+        key='2'
         className={activePage === 'about' ? styles.active : ''}
       >
         About
       </Link>
       <Link 
-        to="contact" 
-        key="3" 
+        to='contact' 
+        key='3' 
         className={activePage === 'contact' ? styles.active : ''}
       >
         Contact
@@ -37,9 +37,9 @@ const NavBar = (props) => {
 
   return (
     <section className={styles.navBar}>
-      <Link to="/" key="0">
+      <Link to='/portfolio-v2' key='0'>
        <InlineIcon 
-          icon={"fa-solid:home"}
+          icon={'fa-solid:home'}
           className={activePage === 'home' ? `${styles.active} ${styles.homeIcon}` : `${styles.homeIcon}`} 
         />
       </Link>
@@ -51,7 +51,7 @@ const NavBar = (props) => {
       {/* </CSSTransitionGroup> */}
       <span onClick={() => setIsOpen(!isOpen)}>
         <InlineIcon 
-          icon={isOpen? "heroicons-solid:x" : "gg-menu"} 
+          icon={isOpen? 'heroicons-solid:x' : 'gg-menu'} 
           className={isOpen ? `${styles.active} ${styles.menuIcon}` : `${styles.menuIcon}`} 
         />
       </span>

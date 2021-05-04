@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 // import { CSSTransition } from 'react-transition-group';
 import { Link } from "@reach/router";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Icon, InlineIcon } from '@iconify/react-with-api';
 import styles from './NavBar.module.scss';
 
 const NavBar = (props) => {
@@ -38,8 +38,8 @@ const NavBar = (props) => {
   return (
     <div className={styles.navBar}>
       <Link to="/" key="0">
-        <FontAwesomeIcon 
-          icon="home" 
+        <Icon 
+          icon={"fa-solid:home"}
           className={activePage === 'home' ? `${styles.active} ${styles.homeIcon}` : `${styles.homeIcon}`} 
         />
       </Link>
@@ -49,7 +49,7 @@ const NavBar = (props) => {
         {/* </div> */}
       {/* </CSSTransition> */}
       <span onClick={() => setIsOpen(!isOpen)}>
-        <FontAwesomeIcon 
+        <Icon 
           icon={menuIcon} 
           className={isOpen ? `${styles.active} ${styles.menuIcon}` : `${styles.menuIcon}`} />
       </span>

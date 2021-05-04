@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Icon } from '@iconify/react-with-api';
 import styles from './Home.module.scss';
 
 const Home = (props) => {
@@ -15,10 +15,10 @@ const Home = (props) => {
       <h3>A Web Developer.</h3>
       <div>
         <a href="https://github.com/kintem" target="_blank">
-          <FontAwesomeIcon icon={["fab", "github-square"]} className= {styles.githubIcon} />
+          {/* <FontAwesomeIcon icon={["fab", "github-square"]} className= {styles.githubIcon} /> */}
         </a>
         <a href="https://www.linkedin.com/in/kinte-matulyte/" target="_blank">
-          <FontAwesomeIcon icon={["fab", "linkedin"]} className={styles.linkedinIcon} />
+          {/* <FontAwesomeIcon icon={["fab", "linkedin"]} className={styles.linkedinIcon} /> */}
         </a>
       </div>
     </section>

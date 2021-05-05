@@ -1,25 +1,26 @@
 {
   "files": {
-    "main.css": "/portfolio-v2/static/css/main.9a33a0d9.chunk.css",
-    "main.js": "/portfolio-v2/static/js/main.c5c81139.chunk.js",
-    "main.js.map": "/portfolio-v2/static/js/main.c5c81139.chunk.js.map",
-    "runtime-main.js": "/portfolio-v2/static/js/runtime-main.caf69d2f.js",
-    "runtime-main.js.map": "/portfolio-v2/static/js/runtime-main.caf69d2f.js.map",
-    "static/js/2.162ea844.chunk.js": "/portfolio-v2/static/js/2.162ea844.chunk.js",
-    "static/js/2.162ea844.chunk.js.map": "/portfolio-v2/static/js/2.162ea844.chunk.js.map",
-    "static/js/3.3862161a.chunk.js": "/portfolio-v2/static/js/3.3862161a.chunk.js",
-    "static/js/3.3862161a.chunk.js.map": "/portfolio-v2/static/js/3.3862161a.chunk.js.map",
+    "main.css": "/portfolio-v2/static/css/main.98b1b003.chunk.css",
+    "main.js": "/portfolio-v2/static/js/main.d826a7e0.chunk.js",
+    "main.js.map": "/portfolio-v2/static/js/main.d826a7e0.chunk.js.map",
+    "runtime-main.js": "/portfolio-v2/static/js/runtime-main.01125631.js",
+    "runtime-main.js.map": "/portfolio-v2/static/js/runtime-main.01125631.js.map",
+    "static/js/2.451faca5.chunk.js": "/portfolio-v2/static/js/2.451faca5.chunk.js",
+    "static/js/2.451faca5.chunk.js.map": "/portfolio-v2/static/js/2.451faca5.chunk.js.map",
+    "static/js/3.17560dce.chunk.js": "/portfolio-v2/static/js/3.17560dce.chunk.js",
+    "static/js/3.17560dce.chunk.js.map": "/portfolio-v2/static/js/3.17560dce.chunk.js.map",
     "index.html": "/portfolio-v2/index.html",
-    "static/css/main.9a33a0d9.chunk.css.map": "/portfolio-v2/static/css/main.9a33a0d9.chunk.css.map",
-    "static/js/2.162ea844.chunk.js.LICENSE.txt": "/portfolio-v2/static/js/2.162ea844.chunk.js.LICENSE.txt",
+    "static/css/main.98b1b003.chunk.css.map": "/portfolio-v2/static/css/main.98b1b003.chunk.css.map",
+    "static/js/2.451faca5.chunk.js.LICENSE.txt": "/portfolio-v2/static/js/2.451faca5.chunk.js.LICENSE.txt",
     "static/media/morse.37d50c22.png": "/portfolio-v2/static/media/morse.37d50c22.png",
+    "static/media/profile.fed041e8.jpg": "/portfolio-v2/static/media/profile.fed041e8.jpg",
     "static/media/sallysays1.ad5f35f8.png": "/portfolio-v2/static/media/sallysays1.ad5f35f8.png",
     "static/media/sallysays2.43a7a147.png": "/portfolio-v2/static/media/sallysays2.43a7a147.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.caf69d2f.js",
-    "static/js/2.162ea844.chunk.js",
-    "static/css/main.9a33a0d9.chunk.css",
-    "static/js/main.c5c81139.chunk.js"
+    "static/js/runtime-main.01125631.js",
+    "static/js/2.451faca5.chunk.js",
+    "static/css/main.98b1b003.chunk.css",
+    "static/js/main.d826a7e0.chunk.js"
   ]
 }

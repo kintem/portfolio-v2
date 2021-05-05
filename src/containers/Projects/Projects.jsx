@@ -13,6 +13,7 @@ const Projects = ({setActivePage}) => {
   return (
     <section className={styles.projects}>
       <Heading text={'Projects'}/>
+      <hr/>
       {projectData.map(project => <ProjectCard project={project}/>)}
     </section>
   )

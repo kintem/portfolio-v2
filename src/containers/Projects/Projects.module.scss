@@ -2,6 +2,12 @@
 
 .projects {
   width: 100vw;
-  background-color: #FFB71B;
+  background-color: #FFD271;
   padding-bottom: 30px;
+
+  hr {
+    border: none;
+    height: 1px;
+    background: linear-gradient( to right, rgba(105, 38, 38, 0), rgb(255, 255, 255), rgba(105, 38, 38, 0));
+  }
 }

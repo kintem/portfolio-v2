@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import { CSSTransitionGroup } from 'react-transition-group';
-import { Link } from "@reach/router";
+import { Link } from '@reach/router';
 import { Icon, InlineIcon } from '@iconify/react-with-api';
 import styles from './NavBar.module.scss';
 

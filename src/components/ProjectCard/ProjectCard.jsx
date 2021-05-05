@@ -19,10 +19,10 @@ const ProjectCard = (props) => {
 
       <div className={styles.iconContainer}>
         {iconsJSX}
-        <a href="">
+        <a href={project.githubURL}>
           <InlineIcon icon={"fa-brands:github"} className={styles.linkIcon}/>
         </a>
-        <a href="">
+        <a href={project.liveURL}>
           <InlineIcon icon={"dashicons-admin-site-alt3"} className={styles.linkIcon}/>
         </a>
       

@@ -1,27 +1,25 @@
 @import '../../variables';
+@import '../../placeholders';
 
 .homeContainer {
-  height: 85vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
 
   h1 {
-    font-family: $heading-font;
+    @extend %heading;
     font-size: 64px;
-    font-weight: 400;
-    margin: 20px 0 10px;
+    margin: 40px 0 10px;
   
     .name {
-      // text-transform: capitalize;
       font-size: 96px;
     }
   }
   
   h2 {
-    font-family: $heading-font;
-    font-weight: 400;
-    font-size: 26px;
+    @extend %heading;
+    font-size: 24px;
     color: #f8ad0b;
     margin: 20px;
   }

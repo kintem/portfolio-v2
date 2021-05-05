@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
-// import { CSSTransition } from 'react-transition-group';
+import { CSSTransitionGroup } from 'react-transition-group';
 import { Link } from "@reach/router";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Icon, InlineIcon } from '@iconify/react-with-api';
 import styles from './NavBar.module.scss';
 
 const NavBar = (props) => {
@@ -12,22 +12,22 @@ const NavBar = (props) => {
   const menu = isOpen ? (
     <nav className={styles.menu}>
       <Link 
-        to="projects" 
-        key="1" 
+        to='projects' 
+        key='1' 
         className={activePage === 'projects' ? styles.active : ''}
       >
         Projects
       </Link>
       <Link 
-        to="about" 
-        key="2" 
+        to='about' 
+        key='2'
         className={activePage === 'about' ? styles.active : ''}
       >
         About
       </Link>
       <Link 
-        to="contact" 
-        key="3" 
+        to='contact' 
+        key='3' 
         className={activePage === 'contact' ? styles.active : ''}
       >
         Contact
@@ -36,24 +36,26 @@ const NavBar = (props) => {
   ) : "";
 
   return (
-    <div className={styles.navBar}>
-      <Link to="/" key="0">
-        <FontAwesomeIcon 
-          icon="home" 
+    <section className={styles.navBar}>
+      <Link to='/portfolio-v2' key='0'>
+       <InlineIcon 
+          icon={'fa-solid:home'}
           className={activePage === 'home' ? `${styles.active} ${styles.homeIcon}` : `${styles.homeIcon}`} 
         />
       </Link>
-      {/* <CSSTransition in={isOpen} timeout={200} classNames="fade-appear"> */}
-        {/* <div> */}
-        {menu}
-        {/* </div> */}
-      {/* </CSSTransition> */}
+      {/* <CSSTransitionGroup
+          transitionName="example"
+          transitionEnterTimeout={500}
+          transitionLeaveTimeout={300}> */}
+          {menu}
+      {/* </CSSTransitionGroup> */}
       <span onClick={() => setIsOpen(!isOpen)}>
-        <FontAwesomeIcon 
-          icon={menuIcon} 
-          className={isOpen ? `${styles.active} ${styles.menuIcon}` : `${styles.menuIcon}`} />
+        <InlineIcon 
+          icon={isOpen? 'heroicons-solid:x' : 'gg-menu'} 
+          className={isOpen ? `${styles.active} ${styles.menuIcon}` : `${styles.menuIcon}`} 
+        />
       </span>
-    </div>
+    </section>
   );
 };
 

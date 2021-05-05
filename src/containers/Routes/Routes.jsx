@@ -9,7 +9,7 @@ const Routes = (props) => {
 
   return (
     <Router>
-      <Home path='/' setActivePage={setActivePage} />
+      <Home path='/portfolio-v2' setActivePage={setActivePage} />
       <About path='about' setActivePage={setActivePage} />
       <Projects path='projects' setActivePage={setActivePage} />
     </Router>

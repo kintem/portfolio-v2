@@ -25,7 +25,7 @@ const projects = [
     name: 'Morse Code Translator',
     img: morse,
     icons: ['fa-html5', 'fa-brands:js-square', 'fa-brands:css3-alt'],
-    description: ''
+    description: 'Simple Morse code translator built in 2.5 hours for one of the Tech Test challenges during the _nology bootcamp'
   },
 ]
 

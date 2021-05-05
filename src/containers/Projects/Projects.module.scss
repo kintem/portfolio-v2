@@ -3,12 +3,19 @@
 
 .projects {
   width: 100vw;
-  background-color: #FFB71B;
+  background-color: #FFD271;
   padding-bottom: 30px;
 
   h2 {
     @extend %heading;
     padding-top: 125px;
-    font-size: 34px;
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+  hr {
+    border: none;
+    height: 1px;
+    background: linear-gradient( to right, rgba(105, 38, 38, 0), rgb(255, 255, 255), rgba(105, 38, 38, 0));
   }
 }

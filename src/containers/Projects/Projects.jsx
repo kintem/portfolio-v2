@@ -4,8 +4,7 @@ import Heading from '../../components/Heading';
 import projectData from '../../data/projects';
 import styles from './Projects.module.scss';
 
-const Projects = (props) => {
-  const {setActivePage} = props;
+const Projects = ({setActivePage}) => {
 
   useEffect(() => {
     setActivePage('projects')

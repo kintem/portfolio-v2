@@ -8,7 +8,7 @@ const Projects = ({setActivePage}) => {
 
   useEffect(() => {
     setActivePage('projects')
-  }, [])
+  })
 
   return (
     <section className={styles.projects}>

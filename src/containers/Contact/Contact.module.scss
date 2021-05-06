@@ -1,0 +1,43 @@
+.contact {
+
+  hr {
+    border: none;
+    height: 1px;
+    background: linear-gradient( to right, rgba(187, 178, 178, 0), rgb(246, 92, 120), rgba(187, 178, 178, 0));
+  }
+
+  .iconContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .linkedinIcon,
+    .githubIcon {
+      font-size: 50px;
+      color: #f65c78;
+    }
+
+    .mailIconContainer {
+      width: 45px;
+      height: 45px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f65c78;
+      border-radius: 4px;
+
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .mailIcon {
+          font-size: 38px;
+          color: white;
+        }
+      }
+    }
+  }
+  
+}

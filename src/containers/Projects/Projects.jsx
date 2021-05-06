@@ -7,14 +7,15 @@ import styles from './Projects.module.scss';
 const Projects = ({setActivePage}) => {
 
   useEffect(() => {
-    setActivePage('projects')
+    setActivePage('projects');
+    console.log('i have been changed');
   }, [])
 
   return (
     <section className={styles.projects}>
       <Heading text={'Projects'}/>
       <hr/>
-      {projectData.map(project => <ProjectCard project={project}/>)}
+      {projectData.map(project => <ProjectCard project={project} key={project.id}/>)}
     </section>
   )
 }

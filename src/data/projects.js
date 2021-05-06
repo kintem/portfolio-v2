@@ -4,6 +4,7 @@ import morse from '../images/morse.png';
 
 const projects = [
   {
+    id: 'pr1',
     name: 'College Thrifts',
     img: '',
     icons: ['fa-brands:react', 'bx-bxl-sass'],
@@ -12,6 +13,7 @@ const projects = [
     liveURL: 'https://college-thrifts.web.app/',
   },
   {
+    id: 'pr2',
     name: 'Sally Says',
     img: sallysays1,
     icons: ['fa-html5', 'fa-brands:js-square', 'bx-bxl-sass'],
@@ -20,6 +22,7 @@ const projects = [
     liveURL: 'https://kintem.github.io/sally-says/',
   },
   {
+    id: 'pr3',
     name: 'Punk API App',
     img: '',
     icons: ['fa-brands:react', 'bx-bxl-sass'],
@@ -28,13 +31,16 @@ const projects = [
     liveURL: '',
   },
   {
+    id: 'pr4',
     name: 'Morse Code Translator',
     img: morse,
     icons: ['fa-html5', 'fa-brands:js-square', 'fa-brands:css3-alt'],
     description: 'Simple Morse code translator built in 2.5 hours for one of the Tech Test challenges during the _nology bootcamp',
     githubURL: 'https://github.com/kintem/morse-code-translator',
     liveURL: 'https://kintem.github.io/morse-code-translator/',
-  },{
+  },
+  {
+    id: 'pr5',
     name: 'Ticket Tracker',
     img: '',
     icons: ['fa-brands:react', 'bx-bxl-sass'],

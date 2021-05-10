@@ -9,10 +9,10 @@ const Home = () => {
         <h1>Hi, I'm <span className={styles.name}>Kinte.</span></h1>
         <h2>A Web Developer.</h2>
         <div>
-          <a href="https://github.com/kintem" target="_blank">
+          <a href="https://github.com/kintem" target="_blank" rel="noreferrer">
             <InlineIcon icon={"fa-brands:github-square"} className= {styles.githubIcon} />
           </a>
-          <a href="https://www.linkedin.com/in/kinte-matulyte/" target="_blank">
+          <a href="https://www.linkedin.com/in/kinte-matulyte/" target="_blank" rel="noreferrer">
             <InlineIcon icon={"fa-brands:linkedin"} className={styles.linkedinIcon} />
           </a>
         </div>

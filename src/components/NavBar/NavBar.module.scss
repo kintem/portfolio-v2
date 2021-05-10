@@ -12,11 +12,6 @@
   background-color: $white;
   border-radius: 0 0 25px 25px;
 
-  .homeIcon {
-    font-size: 24px;
-    color: $grey;
-  }
-
   .menuIcon {
     font-size: 28px;
     color: $grey;
@@ -31,15 +26,16 @@
       margin: 0 8px;
       border-radius: 6px;
     }
-
-    .active {
-      background-color: $pink;
-      color: $white;
-    }
   }
 
   .active {
     color: $pink;
+    font-size: 24px;
+  }
+
+  .default {
+    color: $grey;
+    font-size: 24px;
   }
 
   // .example-enter {

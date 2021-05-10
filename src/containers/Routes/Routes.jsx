@@ -5,15 +5,13 @@ import About from '../About';
 import Projects from '../Projects';
 import Contact from '../Contact';
 
-const Routes = (props) => {
-  const { setActivePage } = props;
-
+const Routes = () => {
   return (
     <Router>
-      <Home path='/portfolio-v2' setActivePage={setActivePage} />
-      <About path='about' setActivePage={setActivePage} />
-      <Projects path='projects' setActivePage={setActivePage} />
-      <Contact path='contact' setActivePage={setActivePage} />
+      <Home path='/portfolio-v2' />
+      <About path='about' />
+      <Projects path='projects' />
+      <Contact path='contact' />
     </Router>
   )
 };

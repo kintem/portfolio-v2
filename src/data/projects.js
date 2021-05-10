@@ -1,12 +1,13 @@
 import sallysays1 from '../images/sallysays1.png';
-import sallysays2 from '../images/sallysays2.png';
+import collegeThrifts from '../images/college-thrifts.png';
+import ticketTracker from '../images/ticket-tracker.png';
 import morse from '../images/morse.png';
 
 const projects = [
   {
     id: 'pr1',
     name: 'College Thrifts',
-    img: '',
+    img: collegeThrifts,
     icons: ['fa-brands:react', 'bx-bxl-sass'],
     description: 'MVP built for a client in 4 weeks during the _nology bootcamp',
     githubURL: '',
@@ -42,7 +43,7 @@ const projects = [
   {
     id: 'pr5',
     name: 'Ticket Tracker',
-    img: '',
+    img: ticketTracker,
     icons: ['fa-brands:react', 'bx-bxl-sass'],
     description: 'Ticket tracker app built using React and hosted with Firebase',
     githubURL: 'https://github.com/kintem/ticket-tracker',

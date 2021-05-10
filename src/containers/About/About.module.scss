@@ -1,10 +1,11 @@
+@import '../../variables';
+@import '../../placeholders';
+
 .aboutContainer {
-  height: 100vh;
-  background-color: #F65C78;
-  display: flex;
+  @extend %flex-center;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  height: 100vh;
+  background-color: $pink;
 
   .headingContainer {
     width: 100%;
@@ -20,7 +21,7 @@
 
   img {
     border-radius: 15px;
-    border: 1px solid white;
+    border: 1px solid $white;
     width: 180px;
     margin: 30px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
@@ -33,17 +34,16 @@
   }
 
   .skillsContainer {
+    @extend %flex-center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     width: 70%;
     margin: 10px auto;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
 
     .skillsIcon {
       margin: 20px;
       font-size: 24px;
-      color: #C3F584;
+      color: $green;
     }
 
     .skillsIcon:nth-child(2) {

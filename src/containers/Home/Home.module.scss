@@ -2,10 +2,9 @@
 @import '../../placeholders';
 
 .homeContainer {
-  height: 100vh;
-  display: flex;
+  @extend %flex-center;
   flex-direction: column;
-  justify-content: center;
+  height: 100vh;
 
   h1 {
     @extend %heading;
@@ -20,7 +19,7 @@
   h2 {
     @extend %heading;
     font-size: 24px;
-    color: #f8ad0b;
+    color: $orange-dark;
     margin: 20px;
   }
   
@@ -31,11 +30,11 @@
   }
   
   .githubIcon {
-    color: #F65C78;
+    color: $pink;
   }
   
   .linkedinIcon {
-    color: #C3F584;
+    color: $green;
   }
   
 }

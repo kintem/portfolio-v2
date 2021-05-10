@@ -1,13 +1,16 @@
+@import '../../variables';
+@import '../../placeholders';
+
 .projectCard {
-  display: flex;
-  background-color: white;
+  @extend %flex-center;
+  background-color: $white;
   border-radius: 10px;
   margin: 30px auto;
-  border: 1px solid white;
+  border: 1px solid $white;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
 
   .left {
-    display: flex;
+    @extend %flex-center;
     flex-direction: column;
     width: 80%;
     margin: 10px 0 8px 10px;
@@ -43,10 +46,9 @@
   }
 
   .iconContainer {
-    display: flex;
+    @extend %flex-center;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;
     width: 20%;
 
     .skillsIcon {
@@ -55,7 +57,7 @@
 
     .linkIcon {
       font-size: 24px;
-      color: #F65C78;
+      color: $pink;
     }
   }
 }

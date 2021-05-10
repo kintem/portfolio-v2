@@ -1,13 +1,27 @@
 @import '../../variables';
 
-.projects {
+.projectsContainer {
   width: 100vw;
+  height: 100%;
   background-color: #FFD271;
-  padding-bottom: 30px;
+  padding: 80px 0 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-  hr {
-    border: none;
-    height: 1px;
-    background: linear-gradient( to right, rgba(165, 150, 150, 0), rgb(255, 255, 255), rgba(165, 150, 150, 0));
+  .headingContainer {
+    width: 100%;
+    
+    hr {
+      border: none;
+      height: 1px;
+      background: linear-gradient( to right, rgba(165, 150, 150, 0), rgb(255, 255, 255), rgba(165, 150, 150, 0));
+    }
+  }
+
+  .projectCardsContainer {
+    width: 90%;
+    margin: 10px 0;
   }
 }

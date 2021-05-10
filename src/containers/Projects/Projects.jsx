@@ -12,10 +12,14 @@ const Projects = ({setActivePage}) => {
   }, [])
 
   return (
-    <section className={styles.projects}>
-      <Heading text={'Projects'}/>
-      <hr/>
-      {projectData.map(project => <ProjectCard project={project} key={project.id}/>)}
+    <section className={styles.projectsContainer}>
+      <div className={styles.headingContainer}>
+        <Heading text={'Projects'}/>
+        <hr/>
+      </div>
+      <div className={styles.projectCardsContainer}>
+        {projectData.map(project => <ProjectCard project={project} key={project.id}/>)}
+      </div>
     </section>
   )
 }

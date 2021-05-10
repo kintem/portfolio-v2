@@ -15,9 +15,11 @@ const About = ({setActivePage}) => {
   const skillsJSX = skillsIcons.map(icon => <InlineIcon icon={icon} className={styles.skillsIcon} />)
 
   return (
-    <section className={styles.about}>
-      <Heading text={'About'}/>
-      <hr/>
+    <section className={styles.aboutContainer}>
+      <div className={styles.headingContainer}>
+        <Heading text={'About'}/>
+        <hr/>
+      </div>
       <img src={profileImg} alt=""/>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi sapiente laborum quam provident, aliquid quaerat ad quibusdam dolore, distinctio maiores labore. Consectetur quisquam ducimus odio esse iste, inventore deserunt adipisci.</p>
       <div className={styles.skillsContainer}>

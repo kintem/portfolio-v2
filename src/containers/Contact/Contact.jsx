@@ -9,7 +9,7 @@ const Contact = ({setActivePage}) => {
   }, [])
 
   return (
-    <section className={styles.contact}>
+    <section className={styles.contactContainer}>
       <Heading text="Contact" />
       <hr/>
       <p>Feel free to say hello via any of these links!</p>

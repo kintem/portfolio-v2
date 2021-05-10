@@ -7,7 +7,7 @@ import profileImg from '../../images/profile.jpg';
 const About = () => {
   const skillsIcons = ['fa-html5', 'fa-brands:css3-alt', 'fa-brands:js-square', 'fa-brands:react', 'bx-bxl-sass', 'fa-brands:node', 'simple-icons:express'];
 
-  const skillsJSX = skillsIcons.map(icon => <InlineIcon icon={icon} className={styles.skillsIcon} />)
+  const skillsJSX = skillsIcons.map(icon => <InlineIcon icon={icon} className={styles.skillsIcon} key={`about:${icon}`} />)
 
   return (
     <section className={styles.aboutContainer}>

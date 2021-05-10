@@ -21,21 +21,21 @@ const NavBar = () => {
     <nav className={styles.menu}>
       <Link 
         to='projects' 
-        key='1' 
+        key='nav:projects' 
         getProps={styleActiveLink}
       >
         Projects
       </Link>
       <Link 
         to='about' 
-        key='2'
+        key='nav:about'
         getProps={styleActiveLink}
       >
         About
       </Link>
       <Link 
         to='contact' 
-        key='3' 
+        key='nav:contact' 
         getProps={styleActiveLink}
       >
         Contact
@@ -45,7 +45,7 @@ const NavBar = () => {
 
   return (
     <section className={styles.navBar}>
-      <Link to='/portfolio-v2' key='0' getProps={styleActiveLink}>
+      <Link to='/portfolio-v2' key='nav:home' getProps={styleActiveLink}>
        <InlineIcon 
           icon={'fa-solid:home'}
         />

@@ -12,7 +12,7 @@ const Projects = () => {
         <hr/>
       </div>
       <div className={styles.projectCardsContainer}>
-        {projectData.map(project => <ProjectCard project={project} key={project.id}/>)}
+        {projectData.map(project => <ProjectCard project={project} key={`project:${project.id}`}/>)}
       </div>
     </section>
   )

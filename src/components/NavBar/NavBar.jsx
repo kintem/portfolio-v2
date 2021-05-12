@@ -12,13 +12,13 @@ const NavBar = () => {
     return {
       className: isCurrent ? `${styles.active}` : `${styles.default}`,
       style: {
-        color: isCurrent ? '#F65C78' : '#757575'
+        color: isCurrent ? '#F65C78' : '#1b1b1b',
       }
     };
   }
 
   const menu = isOpen ? (
-    <nav className={styles.menu}>
+    <nav className={styles.menu} data-aos="fade-left">
       <Link 
         to='projects' 
         key='nav:projects' 
@@ -43,20 +43,24 @@ const NavBar = () => {
     </nav>
   ) : '';
 
+  let navStyles = isOpen ? `${styles.navBar} ${styles.open}`: `${styles.navBar}`;
+
   return (
-    <section className={styles.navBar}>
-      <Link to='/portfolio-v2' key='nav:home' getProps={styleActiveLink}>
-       <InlineIcon 
-          icon={'fa-solid:home'}
-        />
-      </Link>
+    <section className={navStyles}>
+      <span className={styles.iconContainer}>
+        <Link to='/portfolio-v2' key='nav:home' getProps={styleActiveLink}>
+          <InlineIcon 
+            icon={'fa-solid:home'}
+          />
+        </Link>
+      </span>
       {/* <CSSTransitionGroup
           transitionName="example"
           transitionEnterTimeout={500}
           transitionLeaveTimeout={300}> */}
           {menu}
       {/* </CSSTransitionGroup> */}
-      <span onClick={() => setIsOpen(!isOpen)}>
+      <span onClick={() => setIsOpen(!isOpen)} className={styles.iconContainer}>
         <InlineIcon 
           icon={isOpen? 'heroicons-solid:x' : 'gg-menu'} 
           className={isOpen ? `${styles.active} ${styles.menuIcon}` : `${styles.menuIcon}`} 

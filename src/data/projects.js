@@ -2,10 +2,11 @@ import sallysays1 from '../images/sallysays1.png';
 import collegeThrifts from '../images/college-thrifts.png';
 import ticketTracker from '../images/ticket-tracker.png';
 import morse from '../images/morse.png';
+import punkapi from '../images/punkapi.png';
 
 const projects = [
   {
-    id: 'pr1',
+    id: 1,
     name: 'College Thrifts',
     img: collegeThrifts,
     icons: ['fa-brands:react', 'bx-bxl-sass'],
@@ -14,7 +15,7 @@ const projects = [
     liveURL: 'https://college-thrifts.web.app/',
   },
   {
-    id: 'pr2',
+    id: 2,
     name: 'Sally Says',
     img: sallysays1,
     icons: ['fa-html5', 'fa-brands:js-square', 'bx-bxl-sass'],
@@ -23,16 +24,24 @@ const projects = [
     liveURL: 'https://kintem.github.io/sally-says/',
   },
   {
-    id: 'pr3',
-    name: 'Punk API App',
+    id:'pr3',
+    name: 'Planet API',
     img: '',
+    icons: [],
+    githubURL: '',
+    liveURL: ''
+  },
+  {
+    id: 4,
+    name: 'Punk API App',
+    img: punkapi,
     icons: ['fa-brands:react', 'bx-bxl-sass'],
     description: 'A front-end for Punk API built using React',
     githubURL: 'https://github.com/kintem/punkapi-app',
     liveURL: '',
   },
   {
-    id: 'pr4',
+    id: 5,
     name: 'Morse Code Translator',
     img: morse,
     icons: ['fa-html5', 'fa-brands:js-square', 'fa-brands:css3-alt'],
@@ -41,7 +50,7 @@ const projects = [
     liveURL: 'https://kintem.github.io/morse-code-translator/',
   },
   {
-    id: 'pr5',
+    id: 6,
     name: 'Ticket Tracker',
     img: ticketTracker,
     icons: ['fa-brands:react', 'bx-bxl-sass'],

@@ -1,46 +1,53 @@
 import React, {useState} from 'react';
-import { CSSTransitionGroup } from 'react-transition-group';
+// import { CSSTransitionGroup } from 'react-transition-group';
 import { Link } from '@reach/router';
-import { Icon, InlineIcon } from '@iconify/react-with-api';
+import { InlineIcon } from '@iconify/react-with-api';
 import styles from './NavBar.module.scss';
 
-const NavBar = (props) => {
+const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const { activePage } = props;
 
-  const menuIcon = isOpen ? 'times' : 'bars';
+  const styleActiveLink = ({ isCurrent }) => {
+
+    return {
+      className: isCurrent ? `${styles.active}` : `${styles.default}`,
+      style: {
+        color: isCurrent ? '#F65C78' : '#757575'
+      }
+    };
+  }
+
   const menu = isOpen ? (
     <nav className={styles.menu}>
       <Link 
         to='projects' 
-        key='1' 
-        className={activePage === 'projects' ? styles.active : ''}
+        key='nav:projects' 
+        getProps={styleActiveLink}
       >
         Projects
       </Link>
       <Link 
         to='about' 
-        key='2'
-        className={activePage === 'about' ? styles.active : ''}
+        key='nav:about'
+        getProps={styleActiveLink}
       >
         About
       </Link>
       <Link 
         to='contact' 
-        key='3' 
-        className={activePage === 'contact' ? styles.active : ''}
+        key='nav:contact' 
+        getProps={styleActiveLink}
       >
         Contact
       </Link>
     </nav>
-  ) : "";
+  ) : '';
 
   return (
     <section className={styles.navBar}>
-      <Link to='/portfolio-v2' key='0'>
+      <Link to='/portfolio-v2' key='nav:home' getProps={styleActiveLink}>
        <InlineIcon 
           icon={'fa-solid:home'}
-          className={activePage === 'home' ? `${styles.active} ${styles.homeIcon}` : `${styles.homeIcon}`} 
         />
       </Link>
       {/* <CSSTransitionGroup

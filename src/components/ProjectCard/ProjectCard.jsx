@@ -5,7 +5,7 @@ import styles from './ProjectCard.module.scss';
 const ProjectCard = (props) => {
   const { project } = props;
 
-  const iconsJSX = project.icons.map(icon => <Icon icon={icon} className={styles.skillsIcon} />)
+  const iconsJSX = project.icons.map(icon => <Icon icon={icon} className={styles.skillsIcon} key={`pr-card:${icon}`}/>)
 
   return (
     <article className={styles.projectCard} data-aos="fade-right">

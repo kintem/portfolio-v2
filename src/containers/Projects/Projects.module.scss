@@ -1,13 +1,26 @@
 @import '../../variables';
+@import '../../placeholders';
 
-.projects {
+.projectsContainer {
+  @extend %flex-center;
+  flex-direction: column;
   width: 100vw;
-  background-color: #FFD271;
-  padding-bottom: 30px;
+  height: 100%;
+  background-color: $orange-light;
+  padding: 80px 0 30px;
 
-  hr {
-    border: none;
-    height: 1px;
-    background: linear-gradient( to right, rgba(105, 38, 38, 0), rgb(255, 255, 255), rgba(105, 38, 38, 0));
+  .headingContainer {
+    width: 100%;
+    
+    hr {
+      border: none;
+      height: 1px;
+      background: linear-gradient( to right, rgba(165, 150, 150, 0), rgb(255, 255, 255), rgba(165, 150, 150, 0));
+    }
+  }
+
+  .projectCardsContainer {
+    width: 90%;
+    margin: 10px 0;
   }
 }

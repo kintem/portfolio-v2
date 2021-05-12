@@ -1,62 +1,58 @@
 @import '../../variables';
+@import '../../placeholders';
 
 .navBar {
+  @extend %flex-center;
+  justify-content: space-between;
   width: 100vw;
   position: absolute;
   padding: 22px 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   font-family: $body-font;
-  color: #757575;
-  background-color: white;
+  color: $grey;
+  background-color: $white;
   border-radius: 0 0 25px 25px;
-
-  .homeIcon {
-    font-size: 24px;
-    color: #757575;
-  }
 
   .menuIcon {
     font-size: 28px;
-    color: #757575;
+    color: $grey;
   }
 
   .menu {
     a {
-      color: #757575;
+      color: $grey;
       font-size: 16px;
       text-decoration: none;
       padding: 3px 6px;
       margin: 0 8px;
       border-radius: 6px;
     }
-
-    .active {
-      background-color: #F65C78;
-      color: white;
-    }
   }
 
   .active {
-    color: #F65C78;
+    color: $pink;
+    font-size: 24px;
   }
 
-  .example-enter {
-    opacity: 0.01;
+  .default {
+    color: $grey;
+    font-size: 24px;
   }
+
+  // .example-enter {
+  //   opacity: 0.01;
+  // }
   
-  .example-enter.example-enter-active {
-    opacity: 1;
-    transition: opacity 500ms ease-in;
-  }
+  // .example-enter.example-enter-active {
+  //   opacity: 1;
+  //   transition: opacity 500ms ease-in;
+  // }
   
-  .example-leave {
-    opacity: 1;
-  }
+  // .example-leave {
+  //   opacity: 1;
+  // }
   
-  .example-leave.example-leave-active {
-    opacity: 0.01;
-    transition: opacity 300ms ease-in;
-  }
+  // .example-leave.example-leave-active {
+  //   opacity: 0.01;
+  //   transition: opacity 300ms ease-in;
+  // }
 }

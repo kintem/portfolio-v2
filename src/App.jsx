@@ -11,7 +11,7 @@ const App = () => {
   const [activePage, setActivePage] = useState(false);
 
   return (
-    <div className={styles.App}>
+    <div className={styles.App} data-aos="zoom-in">
       <NavBar activePage={activePage} />
       <Routes setActivePage={setActivePage} />
     </div>

@@ -4,10 +4,12 @@
 .aboutContainer {
   @extend %flex-center;
   flex-direction: column;
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
   background-color: $pink;
 
   .headingContainer {
+    margin-top: 70px;
     width: 100%;
 
     hr {

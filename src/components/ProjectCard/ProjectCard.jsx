@@ -7,8 +7,16 @@ const ProjectCard = (props) => {
 
   const iconsJSX = project.icons.map(icon => <Icon icon={icon} className={styles.skillsIcon} key={`pr-card:${icon}`}/>)
 
+  let cardStyles = `${styles.projectCard}`;
+
+  // if (project.id % 2 === 0) {
+  //   cardStyles += ` ${styles.left}`;
+  // } else {
+  //   cardStyles += ` ${styles.right}`;
+  // }
+
   return (
-    <article className={styles.projectCard} data-aos="fade-right">
+    <article className={cardStyles} data-aos={project.id % 2 === 0 ? "fade-up-left" : "fade-up-right"}>
 
       <div className={styles.left}>
         <img src={project.img} alt=""/>

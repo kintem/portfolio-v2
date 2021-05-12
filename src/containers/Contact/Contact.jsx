@@ -10,7 +10,7 @@ const Contact = () => {
       <Heading text="Contact" />
       <hr/>
       <p>Feel free to say hello via any of these links!</p>
-      <div className={styles.iconContainer}>
+      <div className={styles.iconContainer} data-aos="zoom-in">
           <a href="https://github.com/kintem" target="_blank" rel="noreferrer">
             <InlineIcon icon={"fa-brands:github-square"} className= {styles.githubIcon} />
           </a>

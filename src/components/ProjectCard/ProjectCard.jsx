@@ -8,7 +8,7 @@ const ProjectCard = (props) => {
   const iconsJSX = project.icons.map(icon => <Icon icon={icon} className={styles.skillsIcon} />)
 
   return (
-    <article className={styles.projectCard}>
+    <article className={styles.projectCard} data-aos="fade-right">
 
       <div className={styles.left}>
         <img src={project.img} alt=""/>

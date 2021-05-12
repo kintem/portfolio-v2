@@ -17,7 +17,7 @@ const ProjectCard = (props) => {
 
   //"flip-up" OR "fade-left"
   return (
-    <article className={cardStyles} data-aos={project.id % 2 === 0 ? "flip-down" : "flip-up"}>
+    <article className={cardStyles} data-aos={project.id % 2 === 0 ? "fade-left" : "fade-right"}>
 
       <div className={styles.left}>
         <img src={project.img} alt=""/>

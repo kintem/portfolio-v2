@@ -1,10 +1,9 @@
 import React from 'react';
 import ProjectCard from '../../components/ProjectCard';
 import Heading from '../../components/Heading';
-import projectData from '../../data/projects';
 import styles from './Projects.module.scss';
 
-const Projects = () => {
+const Projects = ({projectData}) => {
   return (
     <section className={styles.projectsContainer}>
       <div className={styles.headingContainer}>

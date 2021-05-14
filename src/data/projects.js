@@ -1,4 +1,5 @@
 import sallysays1 from '../images/sallysays1.png';
+import planets from '../images/planets.png';
 import collegeThrifts from '../images/college-thrifts.png';
 import ticketTracker from '../images/ticket-tracker.png';
 import morse from '../images/morse.png';
@@ -10,7 +11,7 @@ const projects = [
     name: 'College Thrifts',
     img: collegeThrifts,
     icons: ['fa-brands:react', 'bx-bxl-sass'],
-    description: 'MVP built for a client in 4 weeks during the _nology bootcamp',
+    description: "MVP built for a client in 4 weeks during _nology's Software Developer bootcamp",
     githubURL: '',
     liveURL: 'https://college-thrifts.web.app/',
   },
@@ -24,11 +25,12 @@ const projects = [
     liveURL: 'https://kintem.github.io/sally-says/',
   },
   {
-    id:'pr3',
+    id: 3,
     name: 'Planet API',
-    img: '',
-    icons: [],
-    githubURL: '',
+    img: planets,
+    icons: ['fa-brands:react', 'bx-bxl-sass', 'fa-brands:node', 'simple-icons:express'],
+    description: 'A front-end built for our own API hosted on Heroku',
+    githubURL: 'https://github.com/kintem/planets',
     liveURL: ''
   },
   {
@@ -36,7 +38,7 @@ const projects = [
     name: 'Punk API App',
     img: punkapi,
     icons: ['fa-brands:react', 'bx-bxl-sass'],
-    description: 'A front-end for Punk API built using React',
+    description: 'A front-end built using React for the data provided by Punk API',
     githubURL: 'https://github.com/kintem/punkapi-app',
     liveURL: '',
   },
@@ -54,7 +56,7 @@ const projects = [
     name: 'Ticket Tracker',
     img: ticketTracker,
     icons: ['fa-brands:react', 'bx-bxl-sass'],
-    description: 'Ticket tracker app built using React and hosted with Firebase',
+    description: 'Ticket tracker built using React and hosted with Firebase',
     githubURL: 'https://github.com/kintem/ticket-tracker',
     liveURL: 'https://ticket-tracker-9fe82.web.app/',
   },

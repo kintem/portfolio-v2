@@ -16,7 +16,7 @@ const About = () => {
         <hr/>
       </div>
       <div className={styles.infoContainer} data-aos="zoom-in">
-        <img src={profileImg} alt="Photo of Kinte Matulyte"/>
+        <img src={profileImg} alt="Kinte Matulyte"/>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi sapiente laborum quam provident, aliquid quaerat ad quibusdam dolore, distinctio maiores labore. Consectetur quisquam ducimus odio esse iste, inventore deserunt adipisci.</p>
       </div>
       <div className={styles.skillsContainer} data-aos="zoom-in">

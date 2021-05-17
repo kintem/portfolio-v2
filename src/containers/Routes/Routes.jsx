@@ -8,7 +8,7 @@ import Contact from '../Contact';
 const Routes = ({projectData}) => {
   return (
     <Router>
-      <Home path='/portfolio-v2' />
+      <Home path='/' />
       <About path='/about' />
       <Projects path='/projects' projectData={projectData} />
       <Contact path='/contact' />

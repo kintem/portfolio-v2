@@ -48,7 +48,7 @@ const NavBar = () => {
   return (
     <section className={navStyles}>
       <span className={styles.iconContainer}>
-        <Link to='/portfolio-v2' key='nav:home' getProps={styleActiveLink}>
+        <Link to='/' key='nav:home' getProps={styleActiveLink}>
           <InlineIcon 
             icon={'fa-solid:home'}
           />

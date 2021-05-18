@@ -21,79 +21,111 @@
     }
   }
 
-  .infoContainer {
-    @extend %flex-center;
-    flex-direction: column;
+  .aboutInfo {
+    margin: 30px;
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 5px;
+    background-color: rgba(255, 192, 203, 0.26);
 
-    img {
-      border-radius: 15px;
-      border: 1px solid $white;
-      width: 180px;
-      margin: 30px;
-      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+    .infoContainer {
+      @extend %flex-center;
+      flex-direction: column;
+  
+      img {
+        border-radius: 15px;
+        border: 1px solid $white;
+        width: 180px;
+        margin: 30px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+      }
+    
+      ul {
+        list-style-type: none;
+        width: 80%;
+        line-height: 1.4;
+        text-transform: none;
+  
+        li {
+          margin: 5px 3px 10px 3px;
+        }
+
+        .nology {
+          font-weight: 600;
+          color: rgb(230, 255, 142);
+        }
+      }
     }
   
-    p {
-      width: 70%;
-      line-height: 1.3;
-      text-transform: none;
-    }
-  }
-
-  .skillsContainer {
-    @extend %flex-center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    width: 70%;
-    margin: 10px auto;
-
-    .skillsIcon {
-      margin: 20px;
-      font-size: 24px;
-      color: $green;
-    }
-
-    .skillsIcon:nth-child(2) {
-      font-size: 27px;
+    .skillsContainer {
+      @extend %flex-center;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      width: 90%;
+      margin: 10px auto;
+  
+      .skillsIcon {
+        margin: 20px;
+        font-size: 24px;
+        color: $green;
+      }
+  
+      .skillsIcon:nth-child(2) {
+        font-size: 27px;
+      }
     }
   }
 }
 
 @media only screen and (min-width: 600px) {
   .aboutContainer {
-    // .headingContainer {
-    //   margin-top: 20px;
-    // }
+    .aboutInfo {
+      width: 75%;
+      max-width: 940px;
+      margin: 40px;
 
-    .infoContainer {
-      img {
-        margin: 50px;
-        width: 250px;
+      .infoContainer {
+        img {
+          margin: 50px;
+          width: 250px;
+        }
+
+        ul {
+          width: 65%;
+        }
       }
-  
-      p {
-        width: 40%;
+      
+      .skillsContainer {
+        width: 50%;
+        padding: 15px;
       }
-    }
-    
-    .skillsContainer {
-      width: 40%;
     }
   }
 }
 
 @media only screen and (min-width: 1020px) {
   .aboutContainer {
-    .infoContainer {
-      flex-direction: row;
-
-      img {
-        width: 200px;
-      }
+    .aboutInfo {
+      .infoContainer {
+        flex-direction: row;
+        margin: 10px 40px;
   
-      p {
-        width: 30%;
-        text-align: left;
+        img {
+          width: 200px;
+        }
+    
+        ul {
+          margin-top: 30px;
+          width: 60%;
+
+          li {
+            text-align: left;
+          }
+        }
+      }
+
+      .skillsContainer {
+        width: 75%;
       }
     }
   }

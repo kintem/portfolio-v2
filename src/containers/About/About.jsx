@@ -15,12 +15,21 @@ const About = () => {
         <Heading text={'About'}/>
         <hr/>
       </div>
-      <div className={styles.infoContainer} data-aos="zoom-in">
-        <img src={profileImg} alt="Kinte Matulyte"/>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi sapiente laborum quam provident, aliquid quaerat ad quibusdam dolore, distinctio maiores labore. Consectetur quisquam ducimus odio esse iste, inventore deserunt adipisci.</p>
-      </div>
-      <div className={styles.skillsContainer} data-aos="zoom-in">
-        { skillsJSX}
+        <div className={styles.aboutInfo}>
+        <div className={styles.infoContainer} data-aos="zoom-in">
+          <img src={profileImg} alt="Kinte Matulyte"/>
+          <ul>
+            <li>I'm a web developer from London.</li>
+            <li>I have a degree in Psychology.</li>
+            <li>I like to travel, learn new things and make things look good.</li>
+            <li>I started learning to code to create a blog about my travels.</li>
+            <li>I have been self-learning web development for several months.</li>
+            <li>I have just finished a 12 week Software Developer Bootcamp with <a href="https://nology.io/" target="_blank" rel="noreferrer" className={styles.nology}>_nology</a>, where I gained a working knowledge of several front-end languages and tools, exposure to some back-end technologies and built an MVP for a client.</li>
+          </ul>
+        </div>
+        <div className={styles.skillsContainer} data-aos="zoom-in">
+          { skillsJSX}
+        </div>
       </div>
     </section>
   )
